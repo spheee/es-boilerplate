@@ -1,0 +1,31 @@
+.shop {
+	.shop-wares {
+		width: 1000px;
+		padding: 0;
+		margin-top: 10px;
+		.wares-category-text {
+			border: 1px solid #ddd;
+			border-bottom: none;
+			padding: 10px 15px;
+			& > span {
+				font-size: 16px;
+				border-left: 5px red solid;
+				padding-left: 5px;
+			}
+
+			//  margin:10px;
+		}
+		ul {
+			list-style-type: square;
+			li {
+				list-style: square;
+				display: list-item;
+				list-style-position: inside;
+				border-radius: 0px;
+				&::before {
+
+				}
+			}
+		}
+	}
+}

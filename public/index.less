@@ -1,4 +1,4 @@
-@light-green: #dddddd;
+@light-green: #ddd;
 @base-green: #5ac2c0;
 @dark-green: #5bc2be;
 @white: #fff;
@@ -14,27 +14,29 @@ body {
 .toolbar {
 
 	// border-bottom: 1px solid rgb(231, 231, 231);
-	width: 100%;
 	height: 25px;
 	line-height: 25px;
 	min-height: 25px;
-	margin-bottom: 0;
-	border: none;
 	font-size: 12px;
 	color: #666;
 	.toolbar-fields {
-		width: 1200px;
-		margin: 0 auto;
-		&:before {
-			display: table;
-			content: " ";
-		}
-		&:after {
-			display: table;
-			content: " ";
-			clear: both;
+		ul {
+			float: right;
 		}
 	}
+
+	// 	// width: 1200px;
+	// 	// margin: 0 auto;
+	// 	&:before {
+	// 		display: table;
+	// 		content: " ";
+	// 	}
+	// 	&:after {
+	// 		display: table;
+	// 		content: " ";
+	// 		clear: both;
+	// 	}
+	// }
 	.navbar-text {
 		margin: 0;
 	}
@@ -52,12 +54,116 @@ body {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	background: #fff;
+
+	//bootstrap栅格在DOM结构上会好很多
+	//logo
+	.searchbox-logo {
+		a {
+			float: left;
+			margin-top: 17.5px;
+			height: 50px;
+			width: 154px;
+			display: inline-block;
+			border-right: 1px solid @light-green;
+			padding-right: 15px;
+		}
+		p {
+			float: left;
+			margin-bottom: 0;
+			span {
+				float: left;
+				color: @base-green;
+				font-size: 30px;
+				margin: 0 15px;
+			}
+		}
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	//输入框组
+	.searchbox-inputgroup {
+		.form-horizontal {
+			float: right;
+			height: 85px;
+			padding-top: 22.5px;
+			.form-group {
+				margin: 0;
+				float: left;
+				input {
+					line-height: 40px;
+					height: 40px;
+					border: 3px solid #5cc2bd;
+					width: 262px;
+					font-size: 20px;
+					border-radius: 0px;
+				}
+				.btn {
+					height: 40px;
+					width: 100px;
+					font-weight: bold;
+					font-size: 16px;
+						// border: 3px solid #5cc2bd;
+						border: none;
+						border-radius: 0px;
+						background: #5cc2bd;
+						color: #fff;
+						outline: none;
+						& + .btn
+						{
+							background: #333333;
+
+						}
+				}
+			}
+		}
+
+		// height: 85px;
+		// margin-left: 450px;
+		// margin-right: 280px;
+		form {
+			position: relative;
+			.search-button {
+				position: absolute;
+				right: 0;
+				z-index: 100;
+				width: 200px;
+				height: 40px;
+				top: 22px;
+				overflow: hidden;
+				text-align: center;
+			}
+			.btn-search {
+				width: 50%;
+				float: left;
+				height: 40px;
+				line-height: 40px;
+
+				// margin-top: 22px;
+				background: #5cc2bd;
+				color: #fff;
+				border: none;
+
+				// letter-spacing: 5px;
+				text-align: center;
+				font-weight: bold;
+				cursor: pointer;
+				font-size: 20px;
+			}
+			.btn-search + .btn-search {
+				background: #333;
+			}
+		}
+
+	}
 	.cup {
 
 		// height: 100px;
-		width: 1200px;
-		position: relative;
-		margin: 0 auto;
+		// width: 1200px;
+		// position: relative;
+		// margin: 0 auto;
 		.sub {
 			float: left;
 			position: relative;
@@ -121,6 +227,7 @@ body {
 		}
 	}
 	.extra {
+		text-align: center;
 		width: 280px;
 		float: left;
 		margin-left: -280px;
@@ -338,7 +445,6 @@ body {
 @yellow: #fad920;
 @orange: #ff6900;
 @gray: #e1e1e1;
-
 @slides: 3;
 
 // @width: 800px;

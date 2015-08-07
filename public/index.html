@@ -4,7 +4,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" href="common.css">
 		<link rel="stylesheet" href="index.css">
 		<!-- <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css"> -->
@@ -13,7 +13,7 @@
 
 	<body>
 		<header>
-			<nav class="toolbar">
+			<nav class="nav navar-nav toolbar">
 				<div class="toolbar-fields container">
 					<div class="navbar-left">
 
@@ -28,7 +28,7 @@
 						</ul>
 					</div>
 
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav">
 						<li>
 							<a href="javascript:;" class="navbar-link">e商管家首页</a>
 						</li>
@@ -48,61 +48,108 @@
 				</div>
 			</nav>
 			<nav class="searchbox">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 searchbox-logo">
 
 
-				<div class="cup">
-					<div class="rect">
-						<div class="search-panel">
+							<a href="javascript:;">
+								<img class="img-responsive" alt="e商管家" src="assets/images/company_logo.png">
+							</a>
 
-							<form role="search">
-								<div class="search-button">
 
-									<button class="btn-search" type="submit">搜e商</button>
-									<button class="btn-search" type="submit">搜本店</button>
+							<p>
+								<span>商铺</span>
+							</p>
+						</div>
+						<div class="col-lg-6 searchbox-inputgroup">
 
+							<form class="form-horizontal " role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
 								</div>
-								<div class="search-panel-fields">
-									<input type="text" autofocus="true">
-
+								<div class=" form-group btn-group">
+									<button class="btn btn-default" type="button">搜e商</button>
+									<button class="btn btn-default" type="button">搜本店</button>
 								</div>
-								<!-- <div class="input-group">
-									<input type="text" class="form-control" aria-label="..." placeholder="Search for...">
-									<div class="input-group-btn">
-
-										<button class="btn btn-default" type="button">Go!</button>
-										<button class="btn btn-default" type="button">Go!</button>
-									</div>
-								</div> -->
 							</form>
 						</div>
+						<div class="col-lg-3">
+							<div class="dropdown col-md-6">
+								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									我的e商
+									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+								</button>
 
-					</div>
-					<div class="sub">
-						<a class="logo" href="javascript:;">
-							<img alt="e商管家" src="assets/images/company_logo.png">
-						</a>
-						<p class="text">
-							商铺
-						</p>
-					</div>
-					<div class="extra">
-						<div class="dropdown">
-							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								我的e商
-								<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-							</button>
-
+							</div>
+							<div class="dropdown col-md-6">
+								<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									去进货单结算
+									<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+								</button>
+							</div>
 						</div>
-						<div class="dropdown">
-							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								去进货单结算
-								<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-							</button>
-						</div>
-
 					</div>
+
+					<!-- <div class="rect">
+								<div class="search-panel">
+
+									<form role="search">
+										<div class="search-button">
+
+											<button class="btn-search" type="submit">搜e商</button>
+											<button class="btn-search" type="submit">搜本店</button>
+
+										</div>
+										<div class="search-panel-fields">
+											<input type="text" autofocus="true">
+
+										</div>
+
+									</form>
+								</div>
+
+							</div>
+							<div class="sub">
+								<div class="search-panel">
+
+									<form role="search">
+										<div class="search-button">
+
+											<button class="btn-search" type="submit">搜e商</button>
+											<button class="btn-search" type="submit">搜本店</button>
+
+										</div>
+										<div class="search-panel-fields">
+											<input type="text" autofocus="true">
+
+										</div>
+
+									</form>
+								</div>
+							</div>
+							<div class="extra">
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										我的e商
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+									</button>
+
+								</div>
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										去进货单结算
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+									</button>
+								</div>
+
+							</div> -->
+
+
 
 				</div>
+				</div>
+
 
 			</nav>
 

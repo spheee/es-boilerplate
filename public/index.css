@@ -8,27 +8,14 @@ body {
   box-sizing: border-box;
 }
 .toolbar {
-  width: 100%;
   height: 25px;
   line-height: 25px;
   min-height: 25px;
-  margin-bottom: 0;
-  border: none;
   font-size: 12px;
   color: #666;
 }
-.toolbar .toolbar-fields {
-  width: 1200px;
-  margin: 0 auto;
-}
-.toolbar .toolbar-fields:before {
-  display: table;
-  content: " ";
-}
-.toolbar .toolbar-fields:after {
-  display: table;
-  content: " ";
-  clear: both;
+.toolbar .toolbar-fields ul {
+  float: right;
 }
 .toolbar .navbar-text {
   margin: 0;
@@ -47,10 +34,88 @@ body {
   border-bottom: 1px solid #ddd;
   background: #fff;
 }
-.searchbox .cup {
-  width: 1200px;
+.searchbox .searchbox-logo a {
+  float: left;
+  margin-top: 17.5px;
+  height: 50px;
+  width: 154px;
+  display: inline-block;
+  border-right: 1px solid #dddddd;
+  padding-right: 15px;
+}
+.searchbox .searchbox-logo p {
+  float: left;
+  margin-bottom: 0;
+}
+.searchbox .searchbox-logo p span {
+  float: left;
+  color: #5ac2c0;
+  font-size: 30px;
+  margin: 0 15px;
+}
+.searchbox .searchbox-logo img {
+  width: 100%;
+  height: 100%;
+}
+.searchbox .searchbox-inputgroup .form-horizontal {
+  float: right;
+  height: 85px;
+  padding-top: 22.5px;
+}
+.searchbox .searchbox-inputgroup .form-horizontal .form-group {
+  margin: 0;
+  float: left;
+}
+.searchbox .searchbox-inputgroup .form-horizontal .form-group input {
+  line-height: 40px;
+  height: 40px;
+  border: 3px solid #5cc2bd;
+  width: 262px;
+  font-size: 20px;
+  border-radius: 0px;
+}
+.searchbox .searchbox-inputgroup .form-horizontal .form-group .btn {
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 0px;
+  background: #5cc2bd;
+  color: #fff;
+  outline: none;
+}
+.searchbox .searchbox-inputgroup .form-horizontal .form-group .btn + .btn {
+  background: #333333;
+}
+.searchbox .searchbox-inputgroup form {
   position: relative;
-  margin: 0 auto;
+}
+.searchbox .searchbox-inputgroup form .search-button {
+  position: absolute;
+  right: 0;
+  z-index: 100;
+  width: 200px;
+  height: 40px;
+  top: 22px;
+  overflow: hidden;
+  text-align: center;
+}
+.searchbox .searchbox-inputgroup form .btn-search {
+  width: 50%;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  background: #5cc2bd;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+.searchbox .searchbox-inputgroup form .btn-search + .btn-search {
+  background: #333;
 }
 .searchbox .cup .sub {
   float: left;
@@ -103,6 +168,7 @@ body {
   width: 270px;
 }
 .searchbox .extra {
+  text-align: center;
   width: 280px;
   float: left;
   margin-left: -280px;

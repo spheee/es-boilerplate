@@ -6,26 +6,32 @@
   padding: 15px 0;
   font-weight: bold;
 }
+.shop-detail .detail-info {
+  min-height: 600px;
+}
 .shop-detail .detail-info .info-order {
   float: left;
   width: 100%;
 }
 .shop-detail .detail-info .info-order .info-order-field {
-  color: #ffffff;
-  padding: 20px;
+  color: #ffffff
+				padding:20px;
   margin-left: 420px;
   background: -webkit-linear-gradient(top, #84ccc0, #419a83);
   background: -moz-linear-gradient(top, #84ccc0, #419a83);
 }
+.shop-detail .detail-info .info-order .info-order-field .container {
+  width: 100%;
+}
 .shop-detail .detail-info .info-order .info-order-field .row div {
   padding: 20px;
-}
-.shop-detail .detail-info .info-order .info-order-field .row .field-price {
-  font-size: 24px;
+  color: #ffffff;
 }
 .shop-detail .detail-info .info-order .info-order-content {
-  padding: 20px;
   margin-left: 420px;
+}
+.shop-detail .detail-info .info-order .info-order-content .container {
+  width: 100%;
 }
 .shop-detail .detail-info .info-order .info-order-content .row div {
   padding: 20px;
@@ -49,6 +55,21 @@
 .shop-detail .detail-info .info-order .info-order-content .row .content-price {
   color: red;
   font-size: 24px;
+}
+.shop-detail .detail-info .info-order .info-order-btn {
+  text-align: center;
+  margin-left: 420px;
+}
+.shop-detail .detail-info .info-order .info-order-btn .btn {
+  font-size: 16px;
+  width: 150px;
+  border-radius: 0px;
+  outline: none;
+  color: #ffffff;
+  background: #EF8D17;
+}
+.shop-detail .detail-info .info-order .info-order-btn .btn + .btn {
+  background: #5CC2BE;
 }
 .shop-detail .detail-info .info-image {
   width: 420px;

@@ -3,6 +3,7 @@
 @dark-green: #5bc2be;
 @white: #fff;
 body {
+	min-width: 1170px;
 	font-family: 'Microsoft YaHei', arial, sans-serif;
 }
 :after,
@@ -98,24 +99,23 @@ body {
 					border: 3px solid #5cc2bd;
 					width: 262px;
 					font-size: 20px;
-					border-radius: 0px;
+					border-radius: 0;
 				}
 				.btn {
 					height: 40px;
 					width: 100px;
 					font-weight: bold;
 					font-size: 16px;
-						// border: 3px solid #5cc2bd;
-						border: none;
-						border-radius: 0px;
-						background: #5cc2bd;
-						color: #fff;
-						outline: none;
-						& + .btn
-						{
-							background: #333333;
 
-						}
+					// border: 3px solid #5cc2bd;
+					border: none;
+					border-radius: 0;
+					background: #5cc2bd;
+					color: #fff;
+					outline: none;
+					& + .btn {
+						background: #333;
+					}
 				}
 			}
 		}
@@ -156,7 +156,16 @@ body {
 				background: #333;
 			}
 		}
+	}
 
+	//右侧按钮
+	.searchbox-extrabtn {
+		ul {
+			top: 70%;
+		}
+		.btn {
+			border-radius: 0;
+		}
 	}
 	.cup {
 
@@ -279,41 +288,68 @@ body {
 	}
 	.shop-bar {
 		height: 35px;
+		min-height: 35px;
 		background: #333;
+		margin-bottom: 0;
+		border: none;
+		border-radius: 0;
 		.shop-bar-fields {
 			width: 1000px;
 			margin: 0 auto;
 			height: 100%;
 		}
 		ul {
-			-webkit-padding-start: 0;
-			height: 100%;
-			margin: 0;
-			display: table;
-			list-style-type: none;
+
+			// -webkit-padding-start: 0;
+			// height: 100%;
+			// margin: 0;
+			// display: table;
+			// list-style-type: none;
 			li {
 				color: #fff;
 
 				// font-size: 14px;
-				width: 170px;
-				background: #d6010e;
+				// width: 170px;
+				// background: #d6010e;
+
 				text-align: center;
 				font-weight: bold;
-				vertical-align: middle;
-				display: table-cell;
 
+				// vertical-align: middle;
+				// display: table-cell;
 				// list-style: none;
+				& > .active{
+					a{
+						// width: 170px;
+						background: #d6010e;
+						color: #fff;
+						height: 35px;
+						line-height: 35px;
+						padding: 0;
+					}
+				}
 			}
-			li + li {
+			a {
 				width: 100px;
 				background: #333;
+				color: #fff;
+				height: 35px;
+				line-height: 35px;
+				padding: 0;
+				&:hover {
+					// width: 170px;
+					background: #d6010e;
+				}
 			}
 		}
 	}
-	.shop-slide {
-		display: inline-block;
-		position: relative;
-		overflow: hidden;
+	.shop-slider {
+		height: 500px;
+		width: 100%;
+		img {
+			width: 100%;
+			height: 500px;
+		}
 	}
 	.shop-content {
 		width: 1000px;

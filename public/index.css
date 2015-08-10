@@ -1,4 +1,5 @@
 body {
+  min-width: 1170px;
   font-family: 'Microsoft YaHei', arial, sans-serif;
 }
 :after,
@@ -72,7 +73,7 @@ body {
   border: 3px solid #5cc2bd;
   width: 262px;
   font-size: 20px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .searchbox .searchbox-inputgroup .form-horizontal .form-group .btn {
   height: 40px;
@@ -80,13 +81,13 @@ body {
   font-weight: bold;
   font-size: 16px;
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   background: #5cc2bd;
   color: #fff;
   outline: none;
 }
 .searchbox .searchbox-inputgroup .form-horizontal .form-group .btn + .btn {
-  background: #333333;
+  background: #333;
 }
 .searchbox .searchbox-inputgroup form {
   position: relative;
@@ -116,6 +117,12 @@ body {
 }
 .searchbox .searchbox-inputgroup form .btn-search + .btn-search {
   background: #333;
+}
+.searchbox .searchbox-extrabtn ul {
+  top: 70%;
+}
+.searchbox .searchbox-extrabtn .btn {
+  border-radius: 0;
 }
 .searchbox .cup .sub {
   float: left;
@@ -218,37 +225,47 @@ body {
 }
 .shop .shop-bar {
   height: 35px;
+  min-height: 35px;
   background: #333;
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
 }
 .shop .shop-bar .shop-bar-fields {
   width: 1000px;
   margin: 0 auto;
   height: 100%;
 }
-.shop .shop-bar ul {
-  -webkit-padding-start: 0;
-  height: 100%;
-  margin: 0;
-  display: table;
-  list-style-type: none;
-}
 .shop .shop-bar ul li {
   color: #fff;
-  width: 170px;
-  background: #d6010e;
   text-align: center;
   font-weight: bold;
-  vertical-align: middle;
-  display: table-cell;
 }
-.shop .shop-bar ul li + li {
+.shop .shop-bar ul li > .active a {
+  background: #d6010e;
+  color: #fff;
+  height: 35px;
+  line-height: 35px;
+  padding: 0;
+}
+.shop .shop-bar ul a {
   width: 100px;
   background: #333;
+  color: #fff;
+  height: 35px;
+  line-height: 35px;
+  padding: 0;
 }
-.shop .shop-slide {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
+.shop .shop-bar ul a:hover {
+  background: #d6010e;
+}
+.shop .shop-slider {
+  height: 500px;
+  width: 100%;
+}
+.shop .shop-slider img {
+  width: 100%;
+  height: 500px;
 }
 .shop .shop-content {
   width: 1000px;

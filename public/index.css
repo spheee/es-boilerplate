@@ -118,8 +118,57 @@ body {
 .searchbox .searchbox-inputgroup form .btn-search + .btn-search {
   background: #333;
 }
-.searchbox .searchbox-extrabtn ul {
-  top: 70%;
+.searchbox .searchbox-extrabtn .extrabtn-cart {
+  margin-top: 30px;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown {
+  height: 35px;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown > a {
+  float: left;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul {
+  width: 270px;
+  font-size: 12px;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .divider {
+  margin: 0;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-items > .media {
+  line-height: initial;
+  padding: 5px;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-items img {
+  width: 64px;
+  height: 64px;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-purchase {
+  text-align: right;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-purchase b {
+  color: red;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-purchase strong {
+  font-size: 18px;
+  color: red;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-history .row {
+  margin: 0px;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-history .col-xs-3 {
+  padding: 3px;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-history .thumbnail {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-history .thumbnail img {
+  height: 100%;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .dropdown-header p {
+  margin: 0;
 }
 .searchbox .searchbox-extrabtn .btn {
   border-radius: 0;
@@ -218,11 +267,6 @@ body {
   width: 130px;
   height: 70px;
 }
-.shop .shop-hd .shop-name {
-  margin-left: 30px;
-  font-size: 26px;
-  color: black;
-}
 .shop .shop-bar {
   height: 35px;
   min-height: 35px;
@@ -266,6 +310,18 @@ body {
 .shop .shop-slider img {
   width: 100%;
   height: 500px;
+}
+.shop .shop-slider li {
+  border-radius: 0;
+  text-indent: 0;
+  font-size: 10px;
+  width: 25px;
+  height: 20px;
+  background-color: #213747;
+  color: #fff;
+  border: none;
+  line-height: 20px;
+  margin: 0;
 }
 .shop .shop-content {
   width: 1000px;

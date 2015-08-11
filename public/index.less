@@ -160,8 +160,84 @@ body {
 
 	//右侧按钮
 	.searchbox-extrabtn {
-		ul {
-			top: 70%;
+		.extrabtn-cart {
+			margin-top: 30px;
+			.dropdown {
+				height: 35px;
+				& > a {
+					float: left;
+				}
+				ul {
+					width: 270px;
+					font-size: 12px;
+
+					// top: 70%;
+					li {
+
+						// height:20px;
+					}
+					.divider {
+						margin: 0;
+					}
+					.cart-items{
+						& > .media
+						{
+							line-height: initial;//重置行高
+							padding: 5px;
+
+						}
+						img
+						{
+							width: 64px;
+							height: 64px;
+						}
+					}
+					.cart-purchase
+					{
+						text-align: right;
+						b
+						{
+							color: red;
+						}
+						strong
+						{
+							font-size: 18px;
+							color: red;
+						}
+
+					}
+					.cart-history {
+						.row
+						{
+							margin: 0px;
+						}
+						.col-xs-3
+						{
+							padding: 3px;
+							// & + .col-xs-3
+							// {
+							// 	padding-left: 7px;
+							// }
+						}
+						.thumbnail {
+							width: 100%;
+							height: 50px;
+							margin-bottom: 0;
+							padding: 0;
+							img {
+								height: 100%;
+							}
+						}
+					}
+					.dropdown-header {
+						p {
+							margin: 0;
+						}
+
+
+					}
+				}
+			}
 		}
 		.btn {
 			border-radius: 0;
@@ -280,11 +356,7 @@ body {
 			width: 130px;
 			height: 70px;
 		}
-		.shop-name {
-			margin-left: 30px;
-			font-size: 26px;
-			color: black;
-		}
+
 	}
 	.shop-bar {
 		height: 35px;
@@ -311,15 +383,15 @@ body {
 				// font-size: 14px;
 				// width: 170px;
 				// background: #d6010e;
-
 				text-align: center;
 				font-weight: bold;
 
 				// vertical-align: middle;
 				// display: table-cell;
 				// list-style: none;
-				& > .active{
-					a{
+				& > .active {
+					a {
+
 						// width: 170px;
 						background: #d6010e;
 						color: #fff;
@@ -337,6 +409,7 @@ body {
 				line-height: 35px;
 				padding: 0;
 				&:hover {
+
 					// width: 170px;
 					background: #d6010e;
 				}
@@ -349,6 +422,18 @@ body {
 		img {
 			width: 100%;
 			height: 500px;
+		}
+		li {
+			border-radius: 0;
+			text-indent: 0;
+			font-size: 10px;
+			width: 25px;
+			height: 20px;
+			background-color: #213747;
+			color: #fff;
+			border: none;
+			line-height: 20px;
+			margin: 0;
 		}
 	}
 	.shop-content {

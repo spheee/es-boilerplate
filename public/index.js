@@ -18,5 +18,5 @@ $('.dropdown-toggle').on('click', function() {
 	$(this).dropdown('toggle')
 
 }).next('ul').on('mouseleave', function() {
-	// $(this).dropdown('toggle')
+	$(this).dropdown('toggle')
 });

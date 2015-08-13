@@ -4,7 +4,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" href="/common.css">
 		<link rel="stylesheet" href="/index.css">
 		<link rel="stylesheet" href="index.css">
@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header class="navbar navbar-static-top">
 			<nav class="toolbar">
 				<div class="toolbar-fields container">
 					<div class="navbar-left">
@@ -29,7 +29,7 @@
 						</ul>
 					</div>
 
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav">
 						<li>
 							<a href="javascript:;" class="navbar-link">e商管家首页</a>
 						</li>
@@ -49,61 +49,160 @@
 				</div>
 			</nav>
 			<nav class="searchbox">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-4 searchbox-logo">
 
 
-				<div class="cup">
-					<div class="rect">
-						<div class="search-panel">
+							<a href="javascript:;">
+								<img class="img-responsive" alt="e商管家" src="/assets/images/company_logo.png">
+							</a>
 
-							<form role="search">
-								<div class="search-button">
 
-									<button class="btn-search" type="submit">搜e商</button>
-									<button class="btn-search" type="submit">搜本店</button>
+							<p>
+								<span>商铺</span>
+							</p>
+						</div>
+						<div class="col-lg-6 col-md-8 searchbox-inputgroup">
 
+							<form class="form-horizontal " role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
 								</div>
-								<div class="search-panel-fields">
-									<input type="text" autofocus="true">
-
+								<div class=" form-group btn-group">
+									<button class="btn btn-default" type="button">搜e商</button>
+									<button class="btn btn-default" type="button">搜本店</button>
 								</div>
-								<!-- <div class="input-group">
-									<input type="text" class="form-control" aria-label="..." placeholder="Search for...">
-									<div class="input-group-btn">
-
-										<button class="btn btn-default" type="button">Go!</button>
-										<button class="btn btn-default" type="button">Go!</button>
-									</div>
-								</div> -->
 							</form>
 						</div>
+						<div class="col-lg-3 hidden-xs hidden-sm hidden-md searchbox-extrabtn">
+							<div class="col-md-6 extrabtn-cart">
+								<div class="dropdown">
+									<a href="http://baidu.com" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false=">
+										我的e商
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+										<li class="dropdown-header">
+											<p>
+												您好，请
+												<a href="javascript:;">登录</a>
 
-					</div>
-					<div class="sub">
-						<a class="logo" href="javascript:;">
-							<img alt="e商管家" src="/assets/images/company_logo.png">
-						</a>
-						<p class="text">
-							商铺
-						</p>
-					</div>
-					<div class="extra">
-						<div class="dropdown">
-							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								我的e商
-								<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-							</button>
+											</p>
+										</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="javascript:;">所有订单</a></li>
+										<li><a href="javascript:;">待付款</a></li>
+										<li><a href="javascript:;">待发货</a></li>
+										<li><a href="javascript:;">待收获</a></li>
+										<li><a href="javascript:;">待评价</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">
+											<p class="clearfix">
 
+												<span class="pull-left">最近浏览的商品:</span>
+												<a class="pull-right" href="javascript:;">查看浏览历史></a>
+											</p>
+											<div class="cart-history">
+												<!-- <p>
+													zheshige p
+													<a>xxx</a>
+												</p> -->
+												<!-- <div class="">
+													&lceil;暂无数据
+												&rfloor;
+												</div> -->
+												<div class="row">
+													<div class="col-xs-3">
+														<a href="#" class="thumbnail">
+															<img src="..." alt="...">
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#" class="thumbnail">
+															<img src="..." alt="...">
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#" class="thumbnail">
+															<img src="..." alt="...">
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#" class="thumbnail">
+															<img src="..." alt="...">
+														</a>
+													</div>
+												</div>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+
+
+							</div>
+							<div class="col-md-6 extrabtn-cart">
+								<div class="dropdown">
+									<a data-target="" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										去购物车结算
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+										<li class="dropdown-header">
+											<p>
+												最新加入的商品
+
+											</p>
+										</li>
+										<li role="separator" class="divider"></li>
+										<li>
+											<ul class="cart-items media-list">
+												<li class="media">
+													<div class="media-left">
+														<a href="#">
+															<img class="media-object" src="..." alt="64x64固定大小">
+														</a>
+													</div>
+													<div class="media-body">
+														<h4 class="media-heading">商品名称</h4>
+														稍微详细的名字
+													</div>
+													<div class="media-right">
+														<span class="media-heading"><b>&yen;280</b>x1</span>
+														<a href="javascript:;">删除</a>
+													</div>
+												</li>
+											</ul>
+											<!-- <ul class="cart-items list-group">
+												<li class="list-group-item cart-items-total ">
+													总计：&yen;888元
+												</li>
+												<li class="list-group-item">
+
+												</li>
+												<li class="list-group-item">
+
+												</li>
+											</ul> -->
+										</li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">
+											<div class="cart-purchase">
+												共<b>1</b>件商品　共计
+												<strong>&yen; 280.00</strong>
+												<br><a href="javascript:;" title="去购物车结算" class="btn btn-danger">去购物车结算</a>
+
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="dropdown">
-							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								去进货单结算
-								<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-							</button>
-						</div>
-
 					</div>
-
 				</div>
+
+
 
 			</nav>
 
@@ -111,134 +210,186 @@
 
 		<div class="shop">
 			<div class="shop-hd">
-				<img src="/assets/images/seuic.png">
-				<span class="shop-name">东集官方直营店</span>
+				<nav class="nav navbar-nav">
+					<div class="container">
+						<div class="navbar-header">
+							<a href="../" class="navbar-brand">
+								<img src="/assets/images/seuic.png">
+							</a>
+						</div>
+						<div class="navbar-text">
+							<h1>东集官方直营店</h1>
+
+						</div>
+					</div>
+				</nav>
 			</div>
-			<div class="shop-bar">
-				<div class="shop-bar-fields">
-					<ul>
+			<nav class="shop-bar navbar navbar-inverse">
+				<!-- <div class="shop-bar-fields"> -->
+				<div class="shop-bar-fields container">
+					<ul class="nav navbar-nav">
 						<li>
+							<a href="javascript:;">
 							所有商品分类
+							</a>
 						</li>
-						<li>
+						<li> <a href="javascript:;">
 							首页
+							</a>
+
 						</li>
-						<li>
+						<li> <a href="javascript:;">
 							所有商品
+							</a>
 						</li>
-						<li>
+						<li> <a href="javascript:;">
 							公司介绍
+							</a>
+
 						</li>
-						<li>
+						<li> <a href="javascript:;">
 							联系方式
+							</a>
+
 						</li>
 					</ul>
 				</div>
 
+			</nav>
 
-
-			</div>
-			<div class="shop-detail">
-				<div class="detail-text">
-					seuic云媒体支付终端&nbsp;Android系统&nbsp;3G无线网络传输&nbsp;7寸彩色液晶显示屏&nbsp;支持手写
-				</div>
-				<div class="detail-info">
-					<div class="info-order">
-						<div class="info-order-field">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-2">
-										起批量
-									</div>
-									<div class="col-md-10">
-										&ge;1台
-									</div>
-
-									<div class="col-md-2">
-										价格
-									</div>
-									<div class="col-md-10 field-price">
-										&yen;5880.00
-									</div>
-								</div>
-
-							</div>
-
-
-						</div>
-						<div class="info-order-content">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-2">
-										物流
-									</div>
-									<div class="col-md-10">
-										重庆&nbsp;&nbsp;卖家承担运费
-									</div>
-									<div class="col-md-6">
-										<p>
-											成交数量
-											<span style="color:red">333</span>
-
-										</p>
-
-									</div>
-									<div class="col-md-6">
-										<p>
-
-											累计评价
-											<span style="color:red">2075
-											</span>
-										</p>
-
-									</div>
-									<div class="col-md-2">
-										颜色
-									</div>
-									<div class="col-md-10">
-										这里放一张图片一类的？要具有面积
-									</div>
-									<div class="col-md-2">
-										数量
-									</div>
-									<div class="col-md-10">
-										xx
-									</div>
-
-
-									<div class="col-md-2">
-										总价
-									</div>
-									<div class="col-md-7 content-price">
-										&yen;11760.00
-									</div>
-									<div class="col-md-3 content-qr">
-										二维码手机下单
-									</div>
-
-
-
-								</div>
-
-
-
-							</div>
-						</div>
-
-						<div class="info-order-btn">
-							<button class="btn btn-default">立即订购</button>
-							<button class="btn btn-default">加入进货单</button>
-						</div>
-					</div>
-					<div class="info-image">
-
-					</div>
+			<div class="shop-detail panel">
+				<div class="detail-text panel-heading">
+					<h1 class="panel-title">
+						seuic云媒体支付终端&nbsp;Android系统&nbsp;3G无线网络传输&nbsp;7寸彩色液晶显示屏&nbsp;支持手写
+					</h1>
 
 				</div>
-				<div class="detail-main">
-					<div class="container">
+				<div class="detail-info panel-body container-fluid">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="info-image">
+								<img class="img-responsive" src="/assets/images/pay_tel.jpg" alt="高400">
+							</div>
+							<div class="info-image-list container-fluid">
+								<ul class="row list-inline">
+									<li>
+										<img alt="..." src="" style="width:60px;height:60px;">
+									</li>
+									<li>
+										<img alt="..." src="" style="width:60px;height:60px;">
+
+
+									</li>
+									<li>
+										<img alt="..." src="" style="width:60px;height:60px;">
+
+
+									</li>
+									<li>
+										<img alt="..." src="" style="width:60px;height:60px;">
+
+									</li>
+									<li>
+										<img alt="..." src="" style="width:60px;height:60px;">
+
+
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-7 info-order">
+							<div class="info-order-field">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-md-2">
+											起批量
+										</div>
+										<div class="col-md-10">
+											&ge;1台
+										</div>
+
+										<div class="col-md-2">
+											价格
+										</div>
+										<div class="col-md-10 field-price">
+											&yen;5880.00
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="info-order-content">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-md-2">
+											物流
+										</div>
+										<div class="col-md-10">
+											重庆&nbsp;&nbsp;卖家承担运费
+										</div>
+										<div class="col-md-6">
+											<p>
+												成交数量
+												<span style="color:red">333</span>
+
+											</p>
+
+										</div>
+										<div class="col-md-6">
+											<p>
+
+												累计评价
+												<span style="color:red">2075
+												</span>
+											</p>
+
+										</div>
+										<div class="col-md-2">
+											颜色
+										</div>
+										<div class="col-md-10">
+											这里放一张图片一类的？要具有面积
+										</div>
+										<div class="col-md-2">
+											数量
+										</div>
+										<div class="col-md-10">
+											xx
+										</div>
+
+
+										<div class="col-md-2">
+											总价
+										</div>
+										<div class="col-md-7 content-price">
+											&yen;11760.00
+										</div>
+										<div class="col-md-3 content-qr">
+											二维码手机下单
+										</div>
+
+
+
+									</div>
+
+
+
+								</div>
+							</div>
+							<div class="info-order-btn">
+								<button class="btn btn-default">立即订购</button>
+								<button class="btn btn-default">加入进货单</button>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<div class="detail-main container-fluid">
+
 						<div class="row">
-							<div class="col-lg-9">
+							<div class="col-lg-10">
 								<ul class="nav nav-tabs nav-justified">
 									<li role="presentation" class="active"><a href="#">商品详情</a></li>
 									<li role="presentation"><a href="#">交易记录</a></li>
@@ -291,19 +442,46 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-3">
+							<div class="col-lg-2 main-taste">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										你可能感兴趣的商品
+									</div>
+									<div class="panel-body container-fluid">
+										<div class="row">
+											<div class="col-xs-12">
+												<img src="" alt="xs-12">
+											</div>
+											<div class="col-xs-12">
+												<img src="" alt="xs-12">
 
+											</div>
+											<div class="col-xs-12">
+												<img src="" alt="xs-12">
+
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</div>
+
 				</div>
+
 			</div>
+
+		</div>
 		</div>
 
 
 
 
 
+		<div class="sticker">
+			<div class="sticker-con">
+
+			</div>
+		</div>
 		<footer class="footer">
 			<div class="footer-hd">
 				<img src="/assets/images/icon_feature_1.jpg">
@@ -324,5 +502,6 @@
 	<script src="/lib/jquery/jquery.min.js" charset="utf-8"></script>
 
 	<script src="/lib/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+	<script src="/index.js"></script>
 
 </html>

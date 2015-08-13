@@ -1,22 +1,26 @@
+.border-remove {
+  border: none;
+  border-radius: 0;
+}
 .shop-detail {
+  border: none;
+  border-radius: 0;
   width: 1000px;
   margin: 0 auto;
 }
 .shop-detail .detail-text {
-  padding: 15px 0;
   font-weight: bold;
+  border: none;
+  border-radius: 0;
+}
+.shop-detail .detail-text > h1 {
+  line-height: 30px;
 }
 .shop-detail .detail-info {
-  min-height: 600px;
-}
-.shop-detail .detail-info .info-order {
-  float: left;
-  width: 100%;
+  padding: 0 15px;
 }
 .shop-detail .detail-info .info-order .info-order-field {
-  color: #ffffff
-				padding:20px;
-  margin-left: 420px;
+  color: #ffffff padding: 20px;
   background: -webkit-linear-gradient(top, #84ccc0, #419a83);
   background: -moz-linear-gradient(top, #84ccc0, #419a83);
 }
@@ -25,10 +29,7 @@
 }
 .shop-detail .detail-info .info-order .info-order-field .row div {
   padding: 20px;
-  color: #ffffff;
-}
-.shop-detail .detail-info .info-order .info-order-content {
-  margin-left: 420px;
+  color: #fff;
 }
 .shop-detail .detail-info .info-order .info-order-content .container {
   width: 100%;
@@ -45,7 +46,7 @@
   padding: 0;
 }
 .shop-detail .detail-info .info-order .info-order-content .row .col-md-6 p {
-  margin: 20px 20px 20px 0px;
+  margin: 20px 20px 20px 0;
   padding-left: 20px;
   text-align: center;
 }
@@ -58,20 +59,29 @@
 }
 .shop-detail .detail-info .info-order .info-order-btn {
   text-align: center;
-  margin-left: 420px;
 }
 .shop-detail .detail-info .info-order .info-order-btn .btn {
-  font-size: 16px;
+  font-size: 18px;
   width: 150px;
-  border-radius: 0px;
+  line-height: 36px;
+  border-radius: 0;
   outline: none;
-  color: #ffffff;
-  background: #EF8D17;
+  color: #fff;
+  background: #ef8d17;
 }
 .shop-detail .detail-info .info-order .info-order-btn .btn + .btn {
-  background: #5CC2BE;
+  background: #5cc2be;
 }
 .shop-detail .detail-info .info-image {
-  width: 420px;
   height: 420px;
+  width: 100%;
+}
+.shop-detail .detail-info .info-image > img {
+  height: 100%;
+}
+.shop-detail .detail-main {
+  margin-top: 30px;
+}
+.shop-detail .detail-main .main-taste {
+  padding: 0px;
 }

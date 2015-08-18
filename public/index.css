@@ -51,7 +51,7 @@ body {
 .searchbox .searchbox-logo p span {
   float: left;
   color: #5ac2c0;
-  font-size: 30px;
+  font-size: 25px;
   margin: 0 15px;
 }
 .searchbox .searchbox-logo img {
@@ -78,7 +78,6 @@ body {
 .searchbox .searchbox-inputgroup .form-horizontal .form-group .btn {
   height: 40px;
   width: 100px;
-  font-weight: bold;
   font-size: 16px;
   border: none;
   border-radius: 0;
@@ -124,6 +123,18 @@ body {
 .searchbox .searchbox-extrabtn .extrabtn-cart .dropdown {
   height: 35px;
 }
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown .cart-icon {
+  background: url("/assets/images/cart_icon_2.png");
+  background-size: contain;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin: 0 3px 0 0;
+  vertical-align: sub;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart .dropdown .cart-icon + .cart-icon {
+  background: url("/assets/images/cart_icon_1.png");
+}
 .searchbox .searchbox-extrabtn .extrabtn-cart .dropdown > a {
   float: left;
 }
@@ -153,7 +164,7 @@ body {
   color: red;
 }
 .searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-history .row {
-  margin: 0px;
+  margin: 0;
 }
 .searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .cart-history .col-xs-3 {
   padding: 3px;
@@ -169,6 +180,15 @@ body {
 }
 .searchbox .searchbox-extrabtn .extrabtn-cart .dropdown ul .dropdown-header p {
   margin: 0;
+}
+.searchbox .searchbox-extrabtn .extrabtn-cart + .extrabtn-cart .cart-icon {
+  background: url("/assets/images/cart_icon_1.png");
+  background-size: contain;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin: 0 3px 0 0;
+  vertical-align: sub;
 }
 .searchbox .searchbox-extrabtn .btn {
   border-radius: 0;
@@ -267,6 +287,9 @@ body {
   width: 130px;
   height: 70px;
 }
+.shop .shop-hd .navbar-text h1 {
+  font-size: 26px;
+}
 .shop .shop-bar {
   height: 35px;
   min-height: 35px;
@@ -283,7 +306,6 @@ body {
 .shop .shop-bar ul li {
   color: #fff;
   text-align: center;
-  font-weight: bold;
 }
 .shop .shop-bar ul li > .active a {
   background: #d6010e;

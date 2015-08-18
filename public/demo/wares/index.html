@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/common.css">
+		<!-- <link rel="stylesheet" href="/common.css"> -->
 		<link rel="stylesheet" href="/index.css">
 		<link rel="stylesheet" href="index.css">
 		<!-- <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap-theme.min.css"> -->
@@ -13,7 +13,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header class="navbar navbar-static-top">
 			<nav class="toolbar">
 				<div class="toolbar-fields container">
 					<div class="navbar-left">
@@ -29,7 +29,7 @@
 						</ul>
 					</div>
 
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav">
 						<li>
 							<a href="javascript:;" class="navbar-link">e商管家首页</a>
 						</li>
@@ -49,61 +49,162 @@
 				</div>
 			</nav>
 			<nav class="searchbox">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-4 searchbox-logo">
 
 
-				<div class="cup">
-					<div class="rect">
-						<div class="search-panel">
+							<a href="javascript:;">
+								<img class="img-responsive" alt="e商管家" src="/assets/images/company_logo_black.png">
+							</a>
 
-							<form role="search">
-								<div class="search-button">
 
-									<button class="btn-search" type="submit">搜e商</button>
-									<button class="btn-search" type="submit">搜本店</button>
+							<p>
+								<span>商铺</span>
+							</p>
+						</div>
+						<div class="col-lg-6 col-md-8 searchbox-inputgroup">
 
+							<form class="form-horizontal " role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
 								</div>
-								<div class="search-panel-fields">
-									<input type="text" autofocus="true">
-
+								<div class=" form-group btn-group">
+									<button class="btn btn-default" type="button">搜e商</button>
+									<button class="btn btn-default" type="button">搜本店</button>
 								</div>
-								<!-- <div class="input-group">
-									<input type="text" class="form-control" aria-label="..." placeholder="Search for...">
-									<div class="input-group-btn">
-
-										<button class="btn btn-default" type="button">Go!</button>
-										<button class="btn btn-default" type="button">Go!</button>
-									</div>
-								</div> -->
 							</form>
 						</div>
+						<div class="col-lg-3 hidden-xs hidden-sm hidden-md searchbox-extrabtn">
+							<div class="col-md-6 extrabtn-cart">
+								<div class="dropdown">
+									<a href="http://baidu.com" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false=">
+										<span class="cart-icon"></span>
+										我的e商
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+										<li class="dropdown-header">
+											<p>
+												您好，请
+												<a href="javascript:;">登录</a>
 
-					</div>
-					<div class="sub">
-						<a class="logo" href="javascript:;">
-							<img alt="e商管家" src="/assets/images/company_logo.png">
-						</a>
-						<p class="text">
-							商铺
-						</p>
-					</div>
-					<div class="extra">
-						<div class="dropdown">
-							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								我的e商
-								<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-							</button>
+											</p>
+										</li>
+										<li role="separator" class="divider"></li>
+										<li><a href="javascript:;">所有订单</a></li>
+										<li><a href="javascript:;">待付款</a></li>
+										<li><a href="javascript:;">待发货</a></li>
+										<li><a href="javascript:;">待收获</a></li>
+										<li><a href="javascript:;">待评价</a></li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">
+											<p class="clearfix">
 
+												<span class="pull-left">最近浏览的商品:</span>
+												<a class="pull-right" href="javascript:;">查看浏览历史></a>
+											</p>
+											<div class="cart-history">
+												<!-- <p>
+													zheshige p
+													<a>xxx</a>
+												</p> -->
+												<!-- <div class="">
+													&lceil;暂无数据
+												&rfloor;
+												</div> -->
+												<div class="row">
+													<div class="col-xs-3">
+														<a href="#" class="thumbnail">
+															<img src="..." alt="...">
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#" class="thumbnail">
+															<img src="..." alt="...">
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#" class="thumbnail">
+															<img src="..." alt="...">
+														</a>
+													</div>
+													<div class="col-xs-3">
+														<a href="#" class="thumbnail">
+															<img src="..." alt="...">
+														</a>
+													</div>
+												</div>
+											</div>
+										</li>
+
+									</ul>
+								</div>
+
+
+							</div>
+							<div class="col-md-6 extrabtn-cart">
+								<div class="dropdown">
+									<a data-target="" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="cart-icon"></span>
+										去购物车结算
+										<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+									</a>
+									<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+										<li class="dropdown-header">
+											<p>
+												最新加入的商品
+
+											</p>
+										</li>
+										<li role="separator" class="divider"></li>
+										<li>
+											<ul class="cart-items media-list">
+												<li class="media">
+													<div class="media-left">
+														<a href="#">
+															<img class="media-object" src="..." alt="64x64固定大小">
+														</a>
+													</div>
+													<div class="media-body">
+														<h4 class="media-heading">商品名称</h4>
+														稍微详细的名字
+													</div>
+													<div class="media-right">
+													<span class="media-heading"><b>&yen;280</b>x1</span>
+													<a href="javascript:;">删除</a>
+													</div>
+												</li>
+											</ul>
+											<!-- <ul class="cart-items list-group">
+												<li class="list-group-item cart-items-total ">
+													总计：&yen;888元
+												</li>
+												<li class="list-group-item">
+
+												</li>
+												<li class="list-group-item">
+
+												</li>
+											</ul> -->
+										</li>
+										<li role="separator" class="divider"></li>
+										<li class="dropdown-header">
+											<div class="cart-purchase">
+												共<b>1</b>件商品　共计
+												<strong>&yen; 280.00</strong>
+												<br><a href="javascript:;" title="去购物车结算" class="btn btn-danger">去购物车结算</a>
+
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="dropdown">
-							<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								去进货单结算
-								<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-							</button>
-						</div>
-
 					</div>
-
 				</div>
+
+
 
 			</nav>
 
@@ -111,34 +212,56 @@
 
 		<div class="shop">
 			<div class="shop-hd">
-				<img src="/assets/images/seuic.png">
-				<span class="shop-name">东集官方直营店</span>
+				<nav class="nav navbar-nav">
+					<div class="container">
+						<div class="navbar-header">
+							<a href="../" class="navbar-brand">
+								<img src="/assets/images/seuic_logo.png">
+							</a>
+						</div>
+						<div class="navbar-text">
+							<h1>东集官方直营店</h1>
+
+						</div>
+					</div>
+				</nav>
+
 			</div>
-			<div class="shop-bar">
-				<div class="shop-bar-fields">
-					<ul>
+
+			<nav class="shop-bar navbar navbar-inverse">
+				<!-- <div class="shop-bar-fields"> -->
+				<div class="shop-bar-fields container">
+					<ul class="nav navbar-nav">
 						<li>
+							<a href="javascript:;">
 							所有商品分类
+							</a>
 						</li>
-						<li>
+						<li> <a href="javascript:;">
 							首页
+							</a>
+
 						</li>
-						<li>
+						<li> <a href="javascript:;">
 							所有商品
+							</a>
 						</li>
-						<li>
+						<li> <a href="javascript:;">
 							公司介绍
+							</a>
+
 						</li>
-						<li>
+						<li> <a href="javascript:;">
 							联系方式
+							</a>
+
 						</li>
 					</ul>
 				</div>
 
+			</nav>
 
-
-			</div>
-			<div class="shop-wares container">
+			<div class="shop-wares container-fluid">
 				<div class="row">
 					<div class="col-lg-3">
 						<div class="wares-category">
@@ -315,23 +438,27 @@
 
 
 
+				<div class="sticker">
+					<div class="sticker-con">
 
-		<footer class="footer">
-			<div class="footer-hd">
-				<img src="/assets/images/icon_feature_1.jpg">
-				<img src="/assets/images/icon_feature_2.jpg">
-				<img src="/assets/images/icon_feature_3.jpg">
-				<img src="/assets/images/icon_feature_4.jpg">
-			</div>
-			<div class="footer-ft">
-				<img src="/assets/images/flogo.png">
-				<br>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="footer-hd">
+						<img src="/assets/images/icon_feature_1.jpg">
+						<img src="/assets/images/icon_feature_2.jpg">
+						<img src="/assets/images/icon_feature_3.jpg">
+						<img src="/assets/images/icon_feature_4.jpg">
+					</div>
+					<div class="footer-ft">
+						<img src="/assets/images/flogo.png">
+						<br>
 
-				<a href="javascript:;">网站声明</a> <b>|</b> <a href="javascript:;">免责声明</a> | <a href="javascript:;">服务网点</a> | <a href="javascript:;">联系我们</a> | 客服热线：95599
-				<br> 中国农业银行版权所有 | 京ICP备05049539
-				<br> 当前版本：2.0.18 Build:0514.1900
-			</div>
-		</footer>
+						<a href="javascript:;">网站声明</a> <b>|</b> <a href="javascript:;">免责声明</a> | <a href="javascript:;">服务网点</a> | <a href="javascript:;">联系我们</a> | 客服热线：95599
+						<br> 中国农业银行版权所有 | 京ICP备05049539
+						<br> 当前版本：2.0.18 Build:0514.1900
+					</div>
+				</footer>
 	</body>
 	<script src="/lib/jquery/jquery.min.js" charset="utf-8"></script>
 

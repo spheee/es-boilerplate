@@ -3,9 +3,6 @@
   padding: 0;
   margin-top: 10px;
 }
-.shop .shop-wares .wares-category {
-  font-weight: bold;
-}
 .shop .shop-wares .wares-category .wares-category-text {
   border: 1px solid #ddd;
   border-bottom: none;
@@ -19,14 +16,14 @@
 .shop .shop-wares .wares-category ul {
   list-style-type: square;
 }
-.shop .shop-wares .wares-category ul li {
-  list-style: square;
+.shop .shop-wares .wares-category ul .list-group-item {
   display: list-item;
   list-style-position: inside;
   border-radius: 0;
 }
-.shop .shop-wares .wares-sales {
-  font-weight: bold;
+.shop .shop-wares .wares-category ul .list-group-item > ul > li {
+  font-size: 12px;
+  color: #999999;
 }
 .shop .shop-wares .wares-sales .wares-sales-text {
   border: 1px solid #ddd;
@@ -50,12 +47,17 @@
 .shop .shop-wares .wares-sales > ul .item-info-describe .info-price {
   color: red;
 }
+.shop .shop-wares .wares-title li a {
+  font-size: 14px;
+  color: #000;
+}
 .shop .shop-wares .wares-item-list {
-  border-bottom: 1px #dddddd dashed;
+  border-bottom: 1px #ddd dashed;
 }
 .shop .shop-wares .wares-item-list .wares-item {
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   margin-bottom: 20px;
+  padding: 5px;
 }
 .shop .shop-wares .wares-item-list .wares-item a {
   width: 100%;
@@ -70,10 +72,29 @@
 .shop .shop-wares .wares-item-list .wares-item a span b {
   margin-right: 20px;
 }
-.shop .shop-wares .wares-item-list .wares-item :hover {
-  border: 1px solid #dddddd;
+.shop .shop-wares .wares-item-list .wares-item:hover {
+  border: 1px solid #ddd;
 }
 .shop .shop-wares .wares-item-list .wares-price {
   margin: 10px auto;
   color: red;
 }
+.shop .shop-wares .wares-item-list .wares-price .wares-price-icon {
+  float: right;
+}
+.shop .shop-wares .wares-item-list .wares-price .wares-price-icon i {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background: url('/assets/images/wares-price-icon.png') no-repeat 0 0;
+}
+.shop .shop-wares .wares-item-list .wares-price .wares-price-icon i:hover {
+  background: url('/assets/images/wares-price-icon.png') no-repeat 0 -20px;
+}
+.shop .shop-wares .wares-item-list .wares-price .wares-price-icon i + i {
+  background: url('/assets/images/wares-price-icon.png') no-repeat -20px 0;
+}
+.shop .shop-wares .wares-item-list .wares-price .wares-price-icon i + i:hover {
+  background: url('/assets/images/wares-price-icon.png') no-repeat -20px -20px;
+}
+/*# sourceMappingURL=index.css.map */

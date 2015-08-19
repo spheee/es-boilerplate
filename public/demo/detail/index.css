@@ -9,11 +9,12 @@
   margin: 0 auto;
 }
 .shop-detail .detail-text {
-  font-weight: bold;
   border: none;
   border-radius: 0;
 }
 .shop-detail .detail-text > h1 {
+  font-weight: bold;
+  color: #000;
   line-height: 30px;
 }
 .shop-detail .detail-info {
@@ -24,12 +25,26 @@
   background: -webkit-linear-gradient(top, #84ccc0, #419a83);
   background: -moz-linear-gradient(top, #84ccc0, #419a83);
 }
-.shop-detail .detail-info .info-order .info-order-field .container {
-  width: 100%;
+.shop-detail .detail-info .info-order .info-order-field .container-fluid {
+  position: relative;
 }
-.shop-detail .detail-info .info-order .info-order-field .row div {
+.shop-detail .detail-info .info-order .info-order-field .container-fluid .row div {
   padding: 20px;
   color: #fff;
+}
+.shop-detail .detail-info .info-order .info-order-field .container-fluid .order-favourite {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  color: #fff;
+}
+.shop-detail .detail-info .info-order .info-order-field .container-fluid .order-favourite .order-favourite-icon {
+  width: 32px;
+  height: 28px;
+  margin: 0 auto 10px;
+  display: block;
+  background: url('/assets/images/order-favourite.png');
+  background-size: contain;
 }
 .shop-detail .detail-info .info-order .info-order-content .container {
   width: 100%;
@@ -82,6 +97,23 @@
 .shop-detail .detail-main {
   margin-top: 30px;
 }
+.shop-detail .detail-main .main-nav li a {
+  font-size: 12px;
+  color: #000;
+}
+.shop-detail .detail-main .main-nav li a:hover {
+  color: #5dc2be;
+}
+.shop-detail .detail-main .main-detail {
+  margin-top: 30px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+}
+.shop-detail .detail-main .main-detail span {
+  color: #999;
+}
 .shop-detail .detail-main .main-taste {
   padding: 0px;
 }
+/*# sourceMappingURL=index.css.map */

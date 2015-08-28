@@ -1,0 +1,22 @@
+.uploader .row > div {
+  margin-top: 10px;
+}
+.btn-input input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+.uploader-operate {
+  float: left;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  margin: 0 5px;
+}
+.uploader-operate :hover {
+  filter: alpha(opacity=20);
+  opacity: .2;
+}
